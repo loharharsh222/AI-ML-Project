@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Form</title>
+    <style>
+        body {
+            background-color: rgba(255, 6, 6, 0.3);
+            background-image: url("/static/submarine.gif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 100% 100%;  
+            overflow-y: hidden;
+        }
+        #ele1{
+            color: aliceblue;
+            margin-left: 43%;
+            margin-top: 1%;
+            opacity: 0%;
+            animation: myopacity;
+            animation-iteration-count: 2;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            padding-top: 50px;
+            animation-timing-function: ease-in;
+        }
+        .bgcolor{
+            z-index: 100;
+            min-height: 100vh;
+            animation: redopacity 1s 7s infinite;
+        }
+        #ele2{
+            color: #fbfcfd;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            width: 16%;
+            text-align: center;
+            margin-left: 39%;
+            margin-top: 25%;
+            opacity: 0%;
+            animation: rockani 1.5s 7s infinite;
+        }
+        #ele3{
+            color: #fbfcfd;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            width: 16%;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 75%;
+        }
+        @keyframes myopacity{
+            from{
+                opacity: 100%;
+            }
+            to{
+                opacity: 0%;
+            }
+        }
+        @keyframes redopacity{
+            from{
+                background-color: none;
+            }
+            to{
+                background-color: rgba(215, 42, 26, 0.2);
+            }
+        }
+        @keyframes rockani{
+            from{
+                opacity: 100%;
+            }
+            to{
+                opacity: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bgcolor">
+        <div>
+            <a id="ele3" href="/">Make Another Prediction</a>            
+            <h1 id="ele1">Analyzing...</h1>
+            <audio src="/static/sonar-183436.mp3" autoplay></audio>
+
+            <audio src="/static/submarines-193501.mp3" autoplay></audio>
+            <h1 id="ele2">Mine Detected</h1>
+            
+        </div>
+    </div>
+</body>
+</html>
